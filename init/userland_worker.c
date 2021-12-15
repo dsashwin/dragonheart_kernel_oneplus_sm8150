@@ -117,6 +117,7 @@ static void vbswap_help(void)
 
 static void fix_proximity(void) {
 	linux_sh("/system/bin/chmod 666 /dev/input/event4");
+	linux_sh("/system/bin/chmod 666 /dev/input/event5");
 	linux_sh("/system/bin/chmod 666 /dev/input/event9");
 	linux_sh("/system/bin/chmod 666 /dev/input/event11");
 }
